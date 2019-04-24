@@ -1,0 +1,28 @@
+{
+  "name": "enhanced",
+  "version": "1.0.0",
+  "description": "node utils",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoxiaojx/enhanced.git"
+  },
+  "author": "xiaojiaxin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoxiaojx/enhanced/issues"
+  },
+  "homepage": "https://github.com/xiaoxiaojx/enhanced#readme",
+  "devDependencies": {
+    "@types/node": "^11.13.7"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}
