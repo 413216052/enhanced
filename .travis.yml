@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "8"
+
+deploy:
+  provider: npm
+  email: "784487301@qq.com"
+  api_key: "36d3502a-c76c-4e3f-ba9d-b76d9bbb0c3b"

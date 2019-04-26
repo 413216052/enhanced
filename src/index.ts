@@ -28,7 +28,7 @@ function generateExportMappings(): ExportMappings {
         .reduce((preVal, cVal) =>
             ({
                 ...preVal,
-                [cVal]: () => require(`./${cVal}`)
+                [cVal]: () => require(`./${cVal}`).default
             })
             , {});
 }
