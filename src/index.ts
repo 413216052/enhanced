@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as path from "path";
 
 interface NormalObject<V = any> {
     [key: string]: V
@@ -18,7 +19,7 @@ function splitSuffix(spt: string): (str: string) => string {
 }
 
 function getExportFilsInfo(): Array<string> {
-    return fs.readdirSync("./src")
+    return fs.readdirSync(path.join(__dirname, "../src"))
         .filter(splitExportExcludeFiles)
         .map(splitSuffix(".ts"))
 }
