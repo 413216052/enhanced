@@ -52,6 +52,18 @@
   console.log(isYarn())
 ```
 
+#### resolveApp
+```
+  const { resolveApp } = require('enhanced')
+  console.log(resolveApp('./src/index.js'))
+```
+
+#### clearConsole
+```
+  const { clearConsole } = require('enhanced')
+  clearConsole()
+```
+
 #### traverseFile
 ```
   const { traverseFile } = require('enhanced')
