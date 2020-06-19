@@ -1,19 +1,18 @@
 language: node_js
 node_js:
-  - "8"
-
+  - "12.13"
 cache:
   directories:
     - node_modules
-
 install:
   - npm install
-
 script: npm run build && npm test
-
 deploy:
   provider: npm
-  email: "784487301@qq.com"
-  api_key: "36d3502a-c76c-4e3f-ba9d-b76d9bbb0c3b"
+  email: 784487301@qq.com
+  api_key:
+    secure: DRbnsUDMMCK2TusZcuHTNqVCtBdMzJfQf1DyYJi+0BtiPOJ7Bba2QXLtrEUTcVcVHbHD0sRqrlW/AthD8H+XarvOOeGGH2GfbhqLZ82QVg/9UkhgUHfXX/d02F7hAsuppI/fbzlcXjRzpSt8hQ0QyPFTOKbjoUBvLt7YCc6exS6dcgMQhzGZf+9Qi65twooqUzNst5kuiAFLwaXwQ8el2DWhQhqn42Quh3POdsgPmsSGDhwu/bPZLuoHboeQy9Li3kya5qIX0QGbjZDjIzIOpQK2D8FyqEOQEAcFCOhunw3102hTUMxjcUxXTk/wobkFD7SqzLQt9uXWRQfI3P55yONsZYAnEoDO7p+VV3tislVAXmvFA4VI2RDD+9YYpN6IuCjp1OEqB+wHlA7STPqzF2R3Q5+BOdrysBJokeRrEBfoQ1ZcAfGaHRLxB48qOwvBGxNgX34+uDbLdbPb4C8B2U7vvk9y5kFex/jnMXLUQqxz5Cj/Vroa6Ctxs8tVouhUAyHDJgTl6hhQ1xFqr2L5BZY//q/WwNRWERPoncT3+m+qGAMRY7KyWHD4uUeVX+VYTnzo8wA5bdFdfL5Hwo8rLY//rtjwgthtd32dL6lOkt+r9bTnsd5TOcuYobCpQMyFCITf5Na/SI70SozWonZAwqW0ylu3F2ezKJr4LENKS4M=
   on:
+    tags: true
+    repo: xiaoxiaojx/enhanced
     branch: master
