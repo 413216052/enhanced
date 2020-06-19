@@ -1,15 +1,12 @@
-## enhanced
-
+### enhanced
 ![images](https://travis-ci.org/xiaoxiaojx/enhanced.svg?branch=master)
+> node utils.
 
-### 一些通用的实用函数, 告别每个项目都要复制一份同样的代码, 如果你有比较实用的函数, 一起加入进来吧!
-
-### Install
+#### Install
 ```
   npm i enhanced --save
 ```
 
-### utils
 #### log
 ```
   const { log } = require('enhanced')
@@ -23,11 +20,11 @@
 #### confirm
 ```
   const { confirm } = require('enhanced')
-  const answer = await confirm('请输入 yes 确认删除!') 
+  const answer = await confirm('Please enter yes to confirm deletion!')
   if (answer !== "yes") {
         return;
    } else {
-      // xxx
+      // do something
    }
 ```
 
@@ -35,15 +32,6 @@
 ```
   const { isInstalled } = require('enhanced')
   console.log(isInstalled('parcel-bundler'))
-```
-
-### traverseFile
-```
-  const { traverseFile } = require('enhanced')
-  const files = []
-  const collectFiles = traverseFile((filePath) => files.push(filePath))
-  collectFiles('./traverseFile')
-  console.log(files.join(', '))
 ```
 
 #### runCommand
@@ -58,13 +46,22 @@
     })
 ```
 
-### isYarn
+#### isYarn
 ```
   const { isYarn } = require('enhanced')
   console.log(isYarn())
 ```
 
-### How to contribute
+#### traverseFile
+```
+  const { traverseFile } = require('enhanced')
+  const files = []
+  const collectFiles = traverseFile((filePath) => files.push(filePath))
+  collectFiles('./traverseFile')
+  console.log(files.join(', '))
+```
+
+##### How to contribute
 1. 新建 src/functionName.ts (index.ts 会自动引入懒加载导出)
 2. 运行 tsc 编译
 3. test/index.js 补充测试
