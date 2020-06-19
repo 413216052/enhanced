@@ -18,4 +18,6 @@ deploy:
     repo: xiaoxiaojx/enhanced
     branch: master
 after_deploy:
-- ./after_deploy.sh
+  - git add .
+  - git commit -m 'chore(version): auto publish'
+  - git push
