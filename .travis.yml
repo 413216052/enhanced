@@ -9,11 +9,7 @@ cache:
 install:
   - npm install
 
-script:
-  - npm test
-
-before_deploy:
-  - npm run build
+script: npm run build && npm test
 
 deploy:
   provider: npm
