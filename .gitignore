@@ -6,3 +6,4 @@ website/
 yarn-error.log
 .DS_Store
 lib
+package-lock.json
