@@ -16,5 +16,6 @@ deploy:
     tags: true
     repo: xiaoxiaojx/enhanced
     branch: master
+    skip_cleanup: true
 after_deploy:
   - ./after_deploy.sh
