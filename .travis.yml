@@ -1,21 +1,21 @@
 language: node_js
 node_js:
-  - "12.13"
+- '12.13'
 cache:
   directories:
-    - node_modules
+  - node_modules
 install:
-  - npm install
+- npm install
 script: npm run build && npm test
 deploy:
   provider: npm
   email: 784487301@qq.com
   skip_cleanup: true
   api_key:
-    secure: DRbnsUDMMCK2TusZcuHTNqVCtBdMzJfQf1DyYJi+0BtiPOJ7Bba2QXLtrEUTcVcVHbHD0sRqrlW/AthD8H+XarvOOeGGH2GfbhqLZ82QVg/9UkhgUHfXX/d02F7hAsuppI/fbzlcXjRzpSt8hQ0QyPFTOKbjoUBvLt7YCc6exS6dcgMQhzGZf+9Qi65twooqUzNst5kuiAFLwaXwQ8el2DWhQhqn42Quh3POdsgPmsSGDhwu/bPZLuoHboeQy9Li3kya5qIX0QGbjZDjIzIOpQK2D8FyqEOQEAcFCOhunw3102hTUMxjcUxXTk/wobkFD7SqzLQt9uXWRQfI3P55yONsZYAnEoDO7p+VV3tislVAXmvFA4VI2RDD+9YYpN6IuCjp1OEqB+wHlA7STPqzF2R3Q5+BOdrysBJokeRrEBfoQ1ZcAfGaHRLxB48qOwvBGxNgX34+uDbLdbPb4C8B2U7vvk9y5kFex/jnMXLUQqxz5Cj/Vroa6Ctxs8tVouhUAyHDJgTl6hhQ1xFqr2L5BZY//q/WwNRWERPoncT3+m+qGAMRY7KyWHD4uUeVX+VYTnzo8wA5bdFdfL5Hwo8rLY//rtjwgthtd32dL6lOkt+r9bTnsd5TOcuYobCpQMyFCITf5Na/SI70SozWonZAwqW0ylu3F2ezKJr4LENKS4M=
+    secure: XrGwSv10Y53nqqAR66XvAq9PFhu7JPCONfIR11VKM5WgxdDtB7gHYCyNWFjPoP596ekarcxwXEEms6SpNm80SgLYq/CVwIU4G3mHjpJqGc42Oiewpy/73oTLGd7YSbak423DFYT5WLPUREIx5H0Io79fiqB7OySlQ8i1vwKKrQivPG0xtz7kacqVDvPcQIGBhjYWy28uRIkHdnpHQ3S9iA4qyznex/MEmAEtsY8jjjPKUX2WMZr93q5UZBRuOE/bz5C3YMfr4EXTZNOcvYgb0gZz3tcJIBN/Rj97MyVDn3gsYqNiZCY9mWKTr1qter63q5XBItV2te3okGS9h6Teboypyf9l/79GGLoPRYyARL5oo6V66WXHwQHZtHFM3Mlcnb3nRVPXgSuQUsKGZA7VEOyr7/yumJw1poiALogciQLpKvjAvhtSHkFzTmlnD1yO+9VwZfImIBQuzfvtMLej/0+qoqi+xjRvOVMsn9Sc7qLt/5vjXRpheARbDTfF6MbjV2QZKM8+bUFcDuW/MckebeOzh7TSQRJZ8hHpFr/pObsC9vdLKf2LxFDqJq4Ve9KG/ALUW6BcTh+ulYScgy7DOa565vso7ClF2piychcQgm1WEbLvC+1Jm6eVHhhYp1gwqGLuCL4waIfG52rXleVuZULWCZ2bbtd5eOLA5Fkmqts=
   on:
     tags: true
     repo: xiaoxiaojx/enhanced
     branch: master
 after_deploy:
-  - ./after_deploy.sh
+- ./after_deploy.sh
