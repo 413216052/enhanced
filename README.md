@@ -46,16 +46,22 @@
     })
 ```
 
-#### isYarn
+#### useYarn
 ```
-  const { isYarn } = require('enhanced')
-  console.log(isYarn())
+  const { useYarn } = require('enhanced')
+  console.log(useYarn())
 ```
 
 #### resolveApp
 ```
   const { resolveApp } = require('enhanced')
   console.log(resolveApp('./src/index.js'))
+```
+
+#### getAppVersion
+```
+  const { getAppVersion } = require('enhanced')
+  console.log(getAppVersion())
 ```
 
 #### clearConsole

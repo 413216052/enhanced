@@ -1,4 +1,4 @@
-export default (command: string, args: ReadonlyArray<string>): Promise<{}> => {
+export default (command: string, args: ReadonlyArray<string>): Promise<void> => {
   const cp = require("child_process");
 
   return new Promise((resolve, reject) => {

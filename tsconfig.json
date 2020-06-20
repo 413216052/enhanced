@@ -12,7 +12,8 @@
             "es5",
             "es6",
             "es7"
-        ]
+        ],
+        "declaration": true
     },
     "include": [
         "./src/*.ts",

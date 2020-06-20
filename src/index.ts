@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-type ExportMappings = Record<string, () => any>;
+type ExportMappings = Record<string, () => unknown>;
 
 const EXPORT_EXCLUDE_FILES: Array<string> = ["index.ts"];
 
@@ -30,7 +30,10 @@ function generateExportMappings(): ExportMappings {
   );
 }
 
-function generateExport(obj: Record<string, unknown>, mappings: ExportMappings): void {
+function generateExport(
+  obj: Record<string, unknown>,
+  mappings: ExportMappings
+): void {
   for (const name of Object.keys(mappings)) {
     Object.defineProperty(obj, name, {
       configurable: false,
